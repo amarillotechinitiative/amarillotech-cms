@@ -1,9 +1,9 @@
 @import "~bulma/sass/utilities/initial-variables"
+// imports 
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+
 
 // Config vars
-// Kaldi logo brand color: #FD461E
-$kaldi-red: #D64000
-$kaldi-red-invert: #fff
 
 // Amarillo Tech Init Brand Colors
 $primary-blue-dark: #231E55
@@ -11,13 +11,29 @@ $primary-blue-light: #495DA2
 $secondary-orange: #B86828
 $secondary-purple: #6D4A9E
 $secondary-grey-light: #CAC7CB
-$secondary-grey-dark: #4A4955
+$secondary-grey-dark: #4A49ff
 $secondary-brown: #392310
 
+// primary colors  
 $primary: $primary-blue-dark
 $primary-invert: $secondary-grey-light
 $body-color: $secondary-grey-light
-$black: #000
+$black: #000000
+$white: #FFFFFF
+$white-ter: $secondary-grey-light
+
+// typography
+$font: 'Lato', sans-serif;
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+$font-xlarge: 30px;
+$font-large: 24px;
+$font-medium: 16px;
+$font-small: 14px;
+$font-xsmall: 10px;
+
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -66,14 +82,14 @@ $black: #000
     font-size: 18px
     font-size: 1rem
     line-height: 1.25
-    background-color: #fff
+    background-color: $primary-blue-light
     border-radius: .25rem
     text-decoration: none
     font-weight: 700
-    color: #CC3700
+    color: $secondary-grey-light
     text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
+    -webkit-box-shadow: inset 0 0 0 2px $secondary-grey-light
+    box-shadow: inset 0 0 0 2px $secondary-grey-light
     -webkit-transition: all .15s ease
     transition: all .15s ease
 
@@ -82,6 +98,7 @@ $black: #000
 
 .navbar-item .icon
   color: $primary
+
 // Override for use of svg's from https://simpleicons.org/
 .icon svg
   width: 1.5rem
@@ -97,9 +114,9 @@ footer.footer
 $menu-item-color: $white-ter
 $menu-item-hover-color: $black !important
 $menu-item-hover-background-color: $black
-$menu-item-active-color: $kaldi-red-invert
-$menu-item-active-background-color:	$kaldi-red-invert
-$menu-list-border-left: 1px solid $kaldi-red-invert
+$menu-item-active-color: $primary-invert
+$menu-item-active-background-color: $primary-invert
+$menu-list-border-left: 1px solid $primary-invert
 $menu-label-color: $white-ter
 
 
@@ -114,19 +131,27 @@ $menu-label-color: $white-ter
 .social a
     padding: .5em .5em .3em .5em
     border-radius: 1em
-    background-color: $white-ter
+    background-color: transparent
     margin: .5em
     width: 1em
     height: 1em
     vertical-align: middle
     display: inline
+.social img
+    width: 5em 
+    height: 5em
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #d6400033;
+  color: $secondary-grey-light;
+  background-color: $primary-blue-light;
 .blog-list-item header
   display: flex;
   margin-bottom: 1em;
+.blog-list-item header p.post-meta
+  background-color: $primary-blue-light;
+  padding: 5px; 
+  color: $primary-invert
 .blog-list-item .featured-thumbnail
   flex-basis: 35%;
   margin: 0 1.5em 0 0;
@@ -134,6 +159,43 @@ $menu-label-color: $white-ter
 
 @import "~bulma"
 
+// font overrides
+body,button,input,textarea
+  font-family: $font;
+  font-weight: $font-regular;
+header, .title, .subtitile
+  font-weight: $font-regular;
+header, .title
+  font-size: $font-medium;
+.subtitile
+  font-size: $font-small;
+
+// Content color overrides
+.content h1, .content h2, .content h3, .content h4, .content h5
+  color: $secondary-grey-light
+
+.burger
+  color: $secondary-grey-light
+.burger is-active
+ color: $primary-blue-dark 
+
+.has-background-primary
+  background-color: $primary
+
+// navbar overrides
+.navbar-item img
+  max-height: 3rem
+
+.navbar-item
+  color: $secondary-grey-light
+
+.navbar-start a.navbar-item:hover, .navbar-start a.navbar-item:focus
+  background: rgb(73,93,162)
+  background: linear-gradient(0deg, rgba(73,93,162,1) 0%, rgba(35,30,85,1) 100%)
+  color: $white
+
+.title, .label, .file-label
+  color: $secondary-grey-light
 
 // responsiveness
 +tablet-only

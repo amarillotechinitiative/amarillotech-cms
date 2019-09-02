@@ -1,0 +1,11 @@
+.donatebutton {
+  background-color: #ffffff;
+  border: 1px solid #495DA2;
+  color: #495DA2;
+  font-weight: 600;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+}

@@ -1,0 +1,31 @@
+@-webkit-keyframes BackgroundAnimation {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes BackgroundAnimation {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@-o-keyframes BackgroundAnimation {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes BackgroundAnimation { 
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+
+
+.container {
+  background: linear-gradient(180deg, #231e55, #495da2);
+  background-size: 400% 400%;
+
+  -webkit-animation: BackgroundAnimation 21s ease infinite;
+  -moz-animation: BackgroundAnimation 21s ease infinite;
+  -o-animation: BackgroundAnimation 21s ease infinite;
+  animation: BackgroundAnimation 21s ease infinite;
+}

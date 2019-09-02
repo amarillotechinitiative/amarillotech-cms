@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import Container from '../components/Container'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 
@@ -42,10 +43,12 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
-        <meta property="og:image" content="/img/og-image.jpg" />
+        <meta property="og:image" content="/img/logo.svg"/>
       </Helmet>
       <Navbar />
+      <Container>
       <div>{children}</div>
+      </Container>
       <Footer />
     </div>
   )

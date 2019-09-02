@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import logo from '../img/logo/FullLogo_White.svg'
+import DonateBtn from '../components/DonateBtn.js'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -35,14 +35,16 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className="has-background-primary navbar is-transparent"
         role="navigation"
         aria-label="main-navigation"
       >
         <div className="container">
-          <div className="navbar-brand">
+          <div className="navbar-brand" style={{ height: '5em' }}>
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+              <img src={logo}
+                  alt="Amarillo Tech Initiative"
+                  width="220" height="60" />
             </Link>
             {/* Hamburger menu */}
             <div
@@ -77,16 +79,7 @@ const Navbar = class extends React.Component {
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
+              <DonateBtn>#</DonateBtn>
             </div>
           </div>
         </div>
