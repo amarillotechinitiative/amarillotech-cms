@@ -9,10 +9,34 @@ import email from '../img/social/Email_LightGrey.svg'
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-primary has-text-white-ter">
-        <div className="content has-text-centered has-background-primary has-text-white-ter">
-          <div className="container has-background-primary has-text-white-ter">
+      <footer className="footer has-text-white-ter">
+        <div className="content has-text-centered has-text-white-ter">
+          <div className="container has-text-white-ter">
             <div className="columns">
+				<div className="column is-4 social">
+                <a title="facebook" href="https://facebook.com">
+                  <img
+                    src={facebook}
+                    alt="Facebook"
+                    style={{ width: '3em', height: '3em' }}
+                  />
+                </a>
+                <a title="meetup" href="https://meetup.com">
+                  <img
+                    className="fas fa-lg"
+                    src={meetup}
+                    alt="Amarillo Tech Meetup"
+                    style={{ width: '3em', height: '3em' }}
+                  />
+                </a>
+                <a title="email" href="https://instagram.com">
+                  <img
+                    src={email}
+                    alt="E-mail"
+                    style={{ width: '3em', height: '3em' }}
+                  />
+                </a>
+              </div>
               <div className="column is-4">
                 <section className="menu">
                   <ul className="menu-list">
@@ -64,30 +88,6 @@ const Footer = class extends React.Component {
                     </li>
                   </ul>
                 </section>
-              </div>
-              <div className="column is-4 social">
-                <a title="facebook" href="https://facebook.com">
-                  <img
-                    src={facebook}
-                    alt="Facebook"
-                    style={{ width: '3em', height: '3em' }}
-                  />
-                </a>
-                <a title="meetup" href="https://meetup.com">
-                  <img
-                    className="fas fa-lg"
-                    src={meetup}
-                    alt="Amarillo Tech Meetup"
-                    style={{ width: '3em', height: '3em' }}
-                  />
-                </a>
-                <a title="email" href="https://instagram.com">
-                  <img
-                    src={email}
-                    alt="E-mail"
-                    style={{ width: '3em', height: '3em' }}
-                  />
-                </a>
               </div>
             </div>
           </div>
