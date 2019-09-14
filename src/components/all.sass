@@ -2,56 +2,68 @@
 // imports 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
 
-
 // Config vars
 
 // Amarillo Tech Init Brand Colors
-$primary-blue-dark: #231E55
-$primary-blue-light: #495DA2
-$secondary-orange: #B86828
-$secondary-purple: #6D4A9E
-$secondary-grey-light: #CAC7CB
-$secondary-grey-dark: #4A49ff
-$secondary-brown: #392310
+$white-ter: #CAC7CB
+$blue: #495DA2
+$blue-invert: $white-ter
+$blue-darker: #231E55
+$orange: #B86828
+$purple: #6D4A9E
+$brown: #392310
 
 // primary colors  
-$primary: $primary-blue-dark
-$primary-invert: $secondary-grey-light
-$body-color: $secondary-grey-light
-$black: #000000
-$white: #FFFFFF
-$white-ter: $secondary-grey-light
+$primary: $blue
+$primary-invert: $blue-invert
+$body-color: $white-ter
+
+// Components
+$footer-background-color: $blue-darker
+$navbar-background-color: $blue-darker
+$navbar-item-color: $white-ter
+$navbar-item-hover-color: $white
+$navbar-item-hover-background-color: $blue
 
 // typography
 $font: 'Lato', sans-serif;
-$font-light: 300;
-$font-regular: 400;
-$font-medium: 500;
-$font-bold: 700;
-$font-xlarge: 30px;
-$font-large: 24px;
-$font-medium: 16px;
-$font-small: 14px;
-$font-xsmall: 10px;
+$weight-normal: 300;
+$family-sans-serif: 'Lato', sans-serif;
+$family-primary: $family-sans-serif
+$label-color: $white-ter
+$text: $white-ter
+$text-invert: $blue
+$text-strong: $white
+$text-light: $white
 
+// inputs
+$input-color: $blue-darker
+$input-background-color: $white
+$input-border-color: $blue-darker
+$input-radius: 2px
 
-.navbar .navbar-menu
-  box-shadow:none !important
+// links
+$link: $blue
+$link-invert: $white-ter
+$link-hover: $blue-darker
+$link-hover-border: $white-ter
+$link-focus: $blue-darker
+$link-focus-border: $white-ter
+$link-active: $blue-darker
+$link-active-border: $white-ter
 
-.content .taglist
-  list-style: none
-  margin-bottom: 0
-  margin-left: 0
-  margin-right: 1.5rem
-  margin-top: 1.5rem
-  display: flex
-  flex-wrap: wrap
-  justify-content: left
-  align-items: center
-  li
-    padding: 0 2rem 1rem 0
-    margin-bottom: 1.5rem
-    margin-top: 0
+// buttons
+//$button-color: $white-ter
+//$button-background-color: $blue-invert
+//$button-border-color: $blue-invert
+//$button-border-width: 2px
+//$button-hover-color: $white-ter
+//$button-hover-border-color: $white-ter
+//$button-focus-color: $white-ter
+//$button-focus-border-color: $white-ter
+
+// Content
+$content-blockquote-background-color: $blue-invert
 
 // Helper Classes
 .full-width-image-container
@@ -76,49 +88,15 @@ $font-xsmall: 10px;
     justify-content: center
     align-items: center
 
-.btn
-    display: inline-block
-    padding: 12px 16px 10px
-    font-size: 18px
-    font-size: 1rem
-    line-height: 1.25
-    background-color: $primary-blue-light
-    border-radius: .25rem
-    text-decoration: none
-    font-weight: 700
-    color: $secondary-grey-light
-    text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px $secondary-grey-light
-    box-shadow: inset 0 0 0 2px $secondary-grey-light
-    -webkit-transition: all .15s ease
-    transition: all .15s ease
-
-.margin-top-0
-  margin-top: 0 !important
-
-.navbar-item .icon
-  color: $primary
-
 // Override for use of svg's from https://simpleicons.org/
 .icon svg
   width: 1.5rem
   height: 1.5rem
-  fill: currentColor
+  fill: $white-ter
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
 footer.footer
   padding: 3rem 0rem 0rem
-  background-color: transparent
-
-//Menu overrides
-$menu-item-color: $white-ter
-$menu-item-hover-color: $black !important
-$menu-item-hover-background-color: $black
-$menu-item-active-color: $primary-invert
-$menu-item-active-background-color: $primary-invert
-$menu-list-border-left: 1px solid $primary-invert
-$menu-label-color: $white-ter
-
 
 .menu-label
   font-size: 1em !important
@@ -133,69 +111,29 @@ $menu-label-color: $white-ter
     border-radius: 1em
     background-color: transparent
     margin: .5em
-    width: 1em
-    height: 1em
+    width: .75em
+    height: .75em
     vertical-align: middle
     display: inline
 .social img
     width: 5em 
     height: 5em
 
-// blog roll
-.blog-list-item.is-featured
-  color: $secondary-grey-light;
-  background-color: $primary-blue-light;
-.blog-list-item header
-  display: flex;
-  margin-bottom: 1em;
-.blog-list-item header p.post-meta
-  background-color: $primary-blue-light;
-  padding: 5px; 
-  color: $primary-invert
-.blog-list-item .featured-thumbnail
-  flex-basis: 35%;
-  margin: 0 1.5em 0 0;
-
 
 @import "~bulma"
-
-// font overrides
-body,button,input,textarea
-  font-family: $font;
-  font-weight: $font-regular;
-header, .title, .subtitile
-  font-weight: $font-regular;
-header, .title
-  font-size: $font-medium;
-.subtitile
-  font-size: $font-small;
-
-// Content color overrides
-.content h1, .content h2, .content h3, .content h4, .content h5
-  color: $secondary-grey-light
-
-.burger
-  color: $secondary-grey-light
-.burger is-active
- color: $primary-blue-dark 
-
-.has-background-primary
-  background-color: $primary
 
 // navbar overrides
 .navbar-item img
   max-height: 3rem
-
-.navbar-item
-  color: $secondary-grey-light
 
 .navbar-start a.navbar-item:hover, .navbar-start a.navbar-item:focus
   background: rgb(73,93,162)
   background: linear-gradient(0deg, rgba(73,93,162,1) 0%, rgba(35,30,85,1) 100%)
   color: $white
 
-.title, .label, .file-label
-  color: $secondary-grey-light
+//body
+//  background: rgb(73,93,162)
+//  background: linear-gradient(0deg, rgba(73,93,162,1) 0%, rgba(35,30,85,1) 100%)
 
 // responsiveness
 +tablet-only
