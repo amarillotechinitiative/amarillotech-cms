@@ -45,12 +45,43 @@ const Footer = class extends React.Component {
   					</span>
 				</div>
 		  		<div class="control">
-					<a class="button is-info">
-					  Sign Up
-					</a>
+					<button type="submit" class="button is-primary">Sign Up</button>
               	</div>
               <div className="column is-4">
-
+				<nav class="breadcrumb has-dot-separator" aria-label="breadcrumbs">
+                  <ul className="menu-list">
+                    <li>
+                      <Link to="/" className="navbar-item">
+                        Home
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="navbar-item" to="/about">
+                        About
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="navbar-item" to="/products">
+                        Products
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="navbar-item" to="/contact/examples">
+                        Form Examples
+                      </Link>
+                    </li>
+                    <li>
+                      <a
+                        className="navbar-item"
+                        href="/admin/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Admin
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
