@@ -35,8 +35,20 @@ const Footer = class extends React.Component {
                 </a>
               </div>
               <div className="column is-4">
-		
-              </div>
+				<div class="control has-icons-left has-icons-right">
+  					<input class="input is-medium" type="email" placeholder="Want Email Updates?">
+  						<span class="icon is-left">
+    						<i class="fas fa-envelope"></i>
+  						</span>
+					<span class="icon is-right">
+    					<i class="fas fa-check"></i>
+  					</span>
+				</div>
+		  		<div class="control">
+					<a class="button is-info">
+					  Sign Up
+					</a>
+              	</div>
               <div className="column is-4">
 
               </div>
