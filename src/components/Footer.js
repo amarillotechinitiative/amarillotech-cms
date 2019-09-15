@@ -48,7 +48,7 @@ const Footer = class extends React.Component {
 					<button type="submit" class="button is-primary">Sign Up</button>
               	</div>
               <div className="column is-4">
-				<nav class="breadcrumb has-dot-separator" aria-label="breadcrumbs">
+<section className="menu">
                   <ul className="menu-list">
                     <li>
                       <Link to="/" className="navbar-item">
@@ -81,7 +81,7 @@ const Footer = class extends React.Component {
                       </a>
                     </li>
                   </ul>
-                </nav>
+                </section>
               </div>
             </div>
           </div>
