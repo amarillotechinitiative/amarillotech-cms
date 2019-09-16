@@ -13,7 +13,7 @@ const Footer = class extends React.Component {
         <div className="content has-text-white-ter">
           <div className="container has-text-white-ter">
             <div className="columns">
-				<div className="column is-4 social">
+	    	<div className="column is-4 social">
                 <a title="facebook" href="https://facebook.com">
                   <img
                     src={facebook}
@@ -35,54 +35,12 @@ const Footer = class extends React.Component {
                 </a>
               </div>
               <div className="column is-4">
-				<div class="control has-icons-left has-icons-right">
-  					<input class="input is-medium" type="email" placeholder="Want Email Updates?">
-  						<span class="icon is-left">
-    						<i class="fas fa-envelope"></i>
-  						</span>
-					<span class="icon is-right">
-    					<i class="fas fa-check"></i>
-  					</span>
-				</div>
-		  		<div class="control">
-					<button type="submit" class="button is-primary">Sign Up</button>
-              	</div>
+    		<p>Input For Email</p>
+	    	</div
+
               <div className="column is-4">
-<section className="menu">
-                  <ul className="menu-list">
-                    <li>
-                      <Link to="/" className="navbar-item">
-                        Home
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/about">
-                        About
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/products">
-                        Products
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
-                      </Link>
-                    </li>
-                    <li>
-                      <a
-                        className="navbar-item"
-                        href="/admin/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Admin
-                      </a>
-                    </li>
-                  </ul>
-                </section>
-              </div>
+	    	<p>Links</p>
+	    	</div>
             </div>
           </div>
         </div>
