@@ -1,5 +1,5 @@
 import React from "react"
-import logo from '../img/logo/VerticalLogo_White.svg'
+import logo from '../img/logo/VerticalLogo_Blue.svg'
 
 export default ({children}) => (
   <div class="box">
